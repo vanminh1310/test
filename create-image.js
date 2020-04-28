@@ -28,7 +28,7 @@ function CreateImage() {
     this.create = async (imgLink, title, description) => {
         const ribonNew = await loadImage('ribbon.png');
         const canvasSource = [];
-        const margin = 2020;
+        const margin = 20;
         const spaceBetweenCanvas = margin * 2 * 3; //marginTop and marginBottom 10px x 3 canvas
         let imageCanvas = await createImageCanvas(imgLink);
         let descriptionCanvas = await createDescriptionCanvas(description);
