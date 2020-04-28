@@ -1,0 +1,12 @@
+# Our community
+
+# Folder structor
+```
+├── news                    
+│   ├── vnexpress.js        # crawler data from vnexpress
+├── app.js                  # main application
+├── create-image.js         # create image from news
+├── facebook.js             # Api Facebook
+└── ...
+```
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vanminh1310/Botnew.git)
