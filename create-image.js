@@ -28,7 +28,7 @@ function CreateImage() {
     this.create = async (imgLink, title, description) => {
         const ribonNew = await loadImage('ribbon.png');
         const canvasSource = [];
-        const margin = 10;
+        const margin = 2020;
         const spaceBetweenCanvas = margin * 2 * 3; //marginTop and marginBottom 10px x 3 canvas
         let imageCanvas = await createImageCanvas(imgLink);
         let descriptionCanvas = await createDescriptionCanvas(description);
@@ -90,7 +90,7 @@ function CreateImage() {
         const img = await loadImage(url);
         const canvas = createCanvas(MAX_WIDTH_CANVAS, canvasHeight);
         const ctx = canvas.getContext('2d');
-        ctx.fillStyle = "#9b9b9b";
+        ctx.fillStyle = "#6EC3C9";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         let cordFitImage = getCordFitImage(img, canvas.height, canvas.width);
