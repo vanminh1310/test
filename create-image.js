@@ -26,8 +26,7 @@ function CreateImage() {
     }
 
     this.create = async (imgLink, title, description) => {
-        const ribonNew = await loadImage('ogo1.png');
-       
+        const ribonNew = await loadImage('ribbon.png');
         const canvasSource = [];
         const margin = 10;
         const spaceBetweenCanvas = margin * 2 * 3; //marginTop and marginBottom 10px x 3 canvas
@@ -79,7 +78,7 @@ function CreateImage() {
 
         ctx.font = '20px arial,sans-serif-light,sans-serif';
         let heightText = wrapText(ctx, description, paddingLeft, 20, canvas.width - paddingRight, 30);
-        
+        const lerniLogo = await loadImage('lerni.dev.png');
         let cordFitImage = getCordFitImage(lerniLogo, heightText, MAX_WIDTH_CANVAS);
         ctx.drawImage(lerniLogo, cordFitImage.x, cordFitImage.y, lerniLogo.width * cordFitImage.scale, lerniLogo.height * cordFitImage.scale);
 
