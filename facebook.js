@@ -46,9 +46,7 @@ function Facebook(accessToken, groupId)
         let date = moment().format('dddd').toUpperCase() + ' NGÀY '+ moment().format('LL').toUpperCase();
         formPublish.append('message',
             `# TIN TỨC BUỔI SÁNG ${date}\n` +
-            '\n' +
-            '## thông tin\n' +
-            '* Bài viết được tự động đăng lúc 7h sáng  hàng ngày\n');
+            '\n');
         formPublish.append('formatting', 'MARKDOWN');
 
         for (let i = 0; i < images.length ; i++) {
