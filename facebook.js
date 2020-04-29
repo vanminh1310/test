@@ -45,7 +45,7 @@ function Facebook(accessToken, groupId)
         let formPublish = new FormData();
         let date = moment().format('dddd').toUpperCase() + ' NGÀY '+ moment().format('LL').toUpperCase();
         formPublish.append('message',
-            `# TIN TỨC BUỔI TRƯA ${date}\n` +
+            `# TIN TỨC BUỔI SÁNG${date}\n` +
             '\n' +
             '## thông tin\n' +
             '* Bài viết được tự động đăng lúc 7h sáng  hàng ngày\n');
