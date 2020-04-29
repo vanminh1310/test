@@ -76,7 +76,7 @@ function CreateImage() {
         const paddingLeft = 20;
         const paddingRight = 20;
 
-        ctx.font = '20px arial,sans-serif-light,sans-serif';
+        ctx.font = '20px arial';
         let heightText = wrapText(ctx, description, paddingLeft, 20, canvas.width - paddingRight, 30);
         return {canvas, height: heightText, width: MAX_WIDTH_CANVAS};
     };
